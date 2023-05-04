@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Luckiest+Guy&family=Rubik+Moonrocks&family=Tilt+Warp&family=Titan+One&display=swap');
+
+body
+{
+    font-family: 'Averia Libre', cursive;
+    background-color: #2F0F5D;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#seleccionar-mascota
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title
+{
+    color: #F5F3C1 ;
+    font-size: 42px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.subtitle
+{
+    color: #BA90C6;
+    font-size: 30px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.cards, .attackCard
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.mokeponCard:hover
+{
+    background-color: #9E4784;
+}
+.mokeponCard
+{
+    width: 180px;
+    border-radius: 50px;
+    background-color: #66347F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #D27685;
+    color: black;
+    font-family: 'Tilt Warp', cursive;
+    margin-top: 30px;
+}
+
+.mokeponCard img
+{
+    width: 100px;
+    display: flex;
+}
+
+#botonMascota
+{
+    width: 180px;
+    border-radius: 500px;
+    background-color: #D27685;
+    padding: 30px;
+    box-sizing: border-box;
+    border-color: #66347F;
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    margin-top: 30px;
+}
+
+input:checked+label 
+{
+    background-color: #9E4784;
+}
+
+input
+{
+    display: none;
+}
+
+#seleccionar-ataque
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #9E4784;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #66347F;
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+}
+
+#messages
+{
+    width: 280px;
+    background: #9E4784;
+    border-color: #66347F;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Tilt Warp', cursive;
+}
+
+#btRestart
+{
+    border: none;
+    color: black;
+    background: none;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.attacks
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.attackP, .attackE
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+    width: 180px;
+    border-radius: 50px;
+    background-color: #66347F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #D27685;
+    font-family: 'Tilt Warp', cursive;
+    margin-top: 30px;
+}
+
+#watchMaps 
+{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#watchMaps button {
+    width: 80px;
+    border-radius: 500px;
+    background-color: #D27685;
+    padding: 30px;
+    box-sizing: border-box;
+    border-color: #66347F;
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    margin: 10px;
+}
+
+.moveButton {
+    display: grid;
+    gap: .25rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+@media (max-width: 560px)
+{
+    .cards, .attackCard
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px)
+{#watchMaps div 
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
